@@ -10,6 +10,7 @@ import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 export function App() {
   const locomotiveScroll = new LocomotiveScroll({
+    el: document.querySelector(".smooth-scroll"),
     smooth: true,
     mobile: {
       smooth: true,
