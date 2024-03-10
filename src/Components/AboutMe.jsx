@@ -6,7 +6,7 @@ function AboutMe() {
       data-scroll
       data-scroll-speed="0"
       id="about"
-      className=" z-[100] min-h-[100vh] bg-[#cdea68] w-full p-20 px-8 md:px-20 rounded-t-3xl"
+      className=" z-[100] h-fit bg-[#cdea68] w-full p-20 px-8 md:px-20 rounded-t-3xl"
     >
       <h1 className=" text-[7vw] leading-[7vw] font-semibold">About Me</h1>
       <p className=" text-base md:text-2xl text-zinc-800 my-5">

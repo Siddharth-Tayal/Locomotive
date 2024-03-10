@@ -23,7 +23,7 @@ function Home() {
         ({ x: 0 }, { borderRadius: 0 }, { background: "rgb(46 ,16 ,101)" })
       }
       transition={{ duration: 1 }}
-      className=" min-h-screen"
+      className=""
     >
       <motion.div className="  flex flex-col px-6 lg:pl-40 md:max-h-[70vh] w-screen text-zinc-100  overflow-hidden pt-40 items-start md:pb-11 justify-center">
         <motion.div

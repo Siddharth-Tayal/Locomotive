@@ -66,9 +66,9 @@ function Projects() {
             />
             <div className=" projectLink " rel="noopener">
               <div className=" flex items-center justify-center gap-3 flex-col">
-                <p className=" text-xl font-semibold ">{item.name} </p>
+                <p className=" md:text-xl font-semibold ">{item.name} </p>
                 <div className=" flex items-center justify-center gap-1 text-zinc-900">
-                  <p className=" text-xl font-semibold ">Tech Stack : </p>
+                  <p className=" md:text-xl font-semibold ">Tech Stack : </p>
                   <span>{item.techStack}</span>
                 </div>
                 <a
