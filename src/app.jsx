@@ -9,7 +9,15 @@ import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 export function App() {
-  const locomotiveScroll = new LocomotiveScroll();
+  const locomotiveScroll = new LocomotiveScroll({
+    smooth: true,
+    mobile: {
+      smooth: true,
+    },
+    tablet: {
+      smooth: true,
+    },
+  });
   return (
     //
     <motion.div className=" bg-zinc-900 ">
