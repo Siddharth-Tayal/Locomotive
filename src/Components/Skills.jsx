@@ -93,7 +93,7 @@ function Skills() {
     <div className="bg-[#cdea68]">
       <div
         id="skills"
-        className=" z-[100] min-h-[100vh]  bg-[rgb(46,16,101)] w-full p-20 px-8 md:px-20 rounded-t-3xl"
+        className=" z-[100] h-fit bg-[rgb(46,16,101)] w-full p-20 px-8 md:px-20 rounded-t-3xl"
       >
         <div>
           <h1 className=" text-white text-[7vw] leading-[7vw] font-semibold">

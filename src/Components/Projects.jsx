@@ -49,7 +49,7 @@ function Projects() {
   return (
     <div
       id="work"
-      className=" z-[100] min-h-[100vh] bg-zinc-900 w-full p-20 px-8 md:px-20 rounded-t-3xl"
+      className=" z-[100] h-fit bg-zinc-900 w-full p-20 px-8 md:px-20 rounded-t-3xl"
     >
       <div>
         <h1 className=" text-white text-[6vw] leading-[6vw] font-semibold pb-10 border-b-[1px] w-fit border-white">

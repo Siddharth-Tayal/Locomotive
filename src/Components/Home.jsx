@@ -25,16 +25,15 @@ function Home() {
       transition={{ duration: 1 }}
       className=" min-h-screen"
     >
-      <motion.div className="  flex flex-col px-6 md:pl-40 h-[60vh] md:h-[70vh] w-screen text-zinc-100  overflow-hidden pt-40 items-start md:pb-11 justify-center">
+      <motion.div className="  flex flex-col px-6 lg:pl-40 md:max-h-[70vh] w-screen text-zinc-100  overflow-hidden pt-40 items-start md:pb-11 justify-center">
         <motion.div
           initial={{ x: 5000 }}
           animate={{ x: 0 }}
           transition={{ duration: 0.5 }}
-          class="font-black text-white lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px]  "
+          class="font-extrabold text-white lg:text-[80px] sm:text-[60px] text-[35px] lg:leading-[98px]  "
         >
           <p class="inline">Hi, I'm</p> <br />
           <span class=" bg-gradient-to-r from-red-500 via-green-500 to-yellow-400 inline-block text-transparent bg-clip-text ">
-            {" "}
             Siddharth Tayal
           </span>
         </motion.div>
@@ -42,10 +41,10 @@ function Home() {
           initial={{ x: -5000 }}
           animate={{ x: 0 }}
           transition={{ duration: 0.5 }}
-          class="text-[#dfd9ff] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-2 text-white-100"
+          class="text-[#dfd9ff] font-medium lg:text-[30px] sm:text-[26px] text-[14px] lg:leading-[40px] my-2 text-white-100"
         >
           I develop Full Stack Wep Applications, using
-          <p className=" text-2xl flex items-center justify-start gap-1 ">
+          <p className=" text-xl sm:text-2xl my-2 flex items-center justify-start gap-1 h-fit ">
             {" "}
             <motion.img
               initial={({ height: "100%" }, { width: 0 })}
