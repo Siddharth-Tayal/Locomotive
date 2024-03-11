@@ -73,20 +73,20 @@ function Skills() {
       text: "VS Code",
     },
     {
-      img: "https://rajesh-mern-stack-portfolio-images.s3.ap-south-1.amazonaws.com/assets/tools/ChatGPT.png",
-      text: "Chat GPT",
-    },
-    {
       img: "https://rajesh-mern-stack-portfolio-images.s3.ap-south-1.amazonaws.com/assets/tools/chrome.png",
       text: "Chrome",
     },
     {
-      img: "https://rajesh-mern-stack-portfolio-images.s3.ap-south-1.amazonaws.com/assets/tools/mongodbCompass.png",
-      text: "Mongo DB Compass",
-    },
-    {
       img: "https://rajesh-mern-stack-portfolio-images.s3.ap-south-1.amazonaws.com/assets/tools/postman.png",
       text: "Postman",
+    },
+    {
+      img: "https://rajesh-mern-stack-portfolio-images.s3.ap-south-1.amazonaws.com/assets/tools/ChatGPT.png",
+      text: "Chat GPT",
+    },
+    {
+      img: "https://rajesh-mern-stack-portfolio-images.s3.ap-south-1.amazonaws.com/assets/tools/mongodbCompass.png",
+      text: "Mongo DB Compass",
     },
   ];
   return (
@@ -99,14 +99,17 @@ function Skills() {
           <h1 className=" text-white text-[7vw] leading-[7vw] font-semibold">
             Skills{" "}
           </h1>
-          <div className="flex flex-wrap items-center justify-center  gap-6 my-5 max-w-screen-lg mx-auto">
+          <div className="flex flex-wrap items-center justify-center  gap-6 sm:gap-9 my-9 md:my-5 max-w-screen-lg mx-auto">
             {skills.map((item, index) => (
-              <div className=" flex flex-col items-center justify-center gap-2">
+              <div
+                key={index}
+                className=" w-[80px] md:w-[120px] flex flex-col items-center justify-center gap-2"
+              >
                 <img
                   src={item.img}
                   className="h-[50px] w-[50px] sm:h-[70px] sm:w-[70px]  "
                 />{" "}
-                <p className=" text-sm sm:text-base font-semibold text-white">
+                <p className=" truncate text-sm sm:text-base font-semibold text-white">
                   {item.text}
                 </p>
               </div>
@@ -116,14 +119,17 @@ function Skills() {
             <h1 className=" text-white text-[4vw] md:leading-[4vw] font-semibold md:font-normal">
               Tools & Software{" "}
             </h1>
-            <div className="flex flex-wrap items-center justify-center gap-6 my-5 max-w-screen-lg mx-auto">
+            <div className="flex flex-wrap items-center justify-center  gap-6 sm:gap-9 my-9 md:my-5 max-w-screen-lg mx-auto">
               {software.map((item, index) => (
-                <div className=" flex flex-col items-center justify-center gap-2">
+                <div
+                  key={index}
+                  className=" flex flex-col items-center justify-center gap-2"
+                >
                   <img
                     src={item.img}
-                    className=" h-[50px] w-[50px] sm:h-[70px] sm:w-[70px] "
+                    className="h-[50px] w-[50px] sm:h-[70px] sm:w-[70px]  "
                   />{" "}
-                  <p className=" text-sm sm:text-base font-semibold text-white">
+                  <p className=" px-2 text-sm sm:text-base font-semibold text-white overflow-hidden ">
                     {item.text}
                   </p>
                 </div>
