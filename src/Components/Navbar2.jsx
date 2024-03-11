@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Logo from "../assets/logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const MOBILE_NAV_ITEMS = [
   {
@@ -155,7 +156,7 @@ const App = () => {
       </div>
       <motion.div
         variants={mobileMenuVariant}
-        className=" fixed top-0 left-0 z-[999] h-screen w-screen flex-col bg-yellow-900 items-center"
+        className=" fixed top-0 left-0 z-[999] h-screen w-screen flex-col bg-[#cdea68] items-center"
       >
         <div className=" w-full flex items-center justify-end">
           <motion.button
@@ -172,7 +173,7 @@ const App = () => {
         >
           {MOBILE_NAV_ITEMS.map((navItem) => (
             <motion.a
-              className=" text-2xl font-semibold uppercase hover:font-extrabold hover:text-green-500 duration-150"
+              className=" text-2xl text-zinc-700 font-semibold uppercase hover:font-extrabold hover:text-green-900 duration-150"
               onClick={() => setMobileNavOpen(false)}
               variants={liVariant}
               href={navItem.link}
@@ -183,9 +184,19 @@ const App = () => {
             </motion.a>
           ))}
         </motion.div>
-        <motion.div variants={fadeInVariant} className=" mt-[80px] flex ">
-          <h5>+852 5650 2233</h5>
-          <h5>hi@designagency.com</h5>
+        <motion.div
+          variants={fadeInVariant}
+          className=" mt-[80px] flex items-center justify-center gap-6 text-5xl"
+        >
+          <a href="">
+            <FaLinkedin className=" text-blue-600 hover:opacity-65 duration-300" />
+          </a>
+          <a href="">
+            <FaGithub className=" text-zinc-900 hover:opacity-65 duration-300" />
+          </a>
+          <a href="">
+            <FaInstagram className=" text-purple-600 hover:opacity-65 duration-300" />
+          </a>
         </motion.div>
       </motion.div>
     </motion.nav>
