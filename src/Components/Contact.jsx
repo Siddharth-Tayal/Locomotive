@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { useAlert } from "react-alert";
 import Me from "../assets/Me.jpg";
 import {
   FaAngleDoubleRight,
@@ -12,7 +11,6 @@ import {
 } from "react-icons/fa";
 
 export default function Contact() {
-  const alert = useAlert();
   const form = useRef();
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
@@ -23,7 +21,6 @@ export default function Contact() {
   const message = async (e) => {
     e.preventDefault();
     setLoading(true);
-    console.log(formData);
     try {
       await emailjs.sendForm(
         "service_g4051j7",
@@ -31,10 +28,8 @@ export default function Contact() {
         form.current,
         "qr0ZG_2EECaoasVEW"
       );
-      alert.success("Message Sent Successfully");
       setLoading(false);
     } catch (error) {
-      alert.error("Error Occured");
       setLoading(false);
     }
   };

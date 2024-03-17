@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import React, { useState } from "react";
+import React from "react";
 import { TiTickOutline } from "react-icons/ti";
 import { IoCalendarNumberSharp } from "react-icons/io5";
 import { GrGroup } from "react-icons/gr";
