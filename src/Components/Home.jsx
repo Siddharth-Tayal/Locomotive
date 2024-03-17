@@ -59,19 +59,12 @@ function Home() {
         <div className=" flex flex-col gap-2 items-center justify-center text-white ">
           <TiTickOutline className=" text-[40px] md:text-[80px] text-white " />{" "}
           <div className=" flex items-center gap-1 justify-center">
-            <Circle
-              percent={
-                <Countup
-                  className=" font-semibold text-base md:text-2xl"
-                  start={0}
-                  end={25}
-                  duration={5}
-                />
-              }
-              strokeWidth={4}
-              strokeColor="#D3D3D3"
+            <Countup
+              className=" font-semibold text-base md:text-2xl"
+              start={0}
+              end={25}
+              duration={5}
             />
-
             <p className=" font-semibold text-base md:text-2xl">+</p>
           </div>
           <p className=" text-sm md:text-xl">Projects Completed</p>
