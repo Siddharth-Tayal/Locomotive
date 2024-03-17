@@ -5,8 +5,9 @@ import Tic from "../assets/Tic.jpg";
 import Urban from "../assets/Urban.png";
 import Voice from "../assets/Voice.png";
 import Crud from "../assets/Crud.png";
-import { GiAerialSignal } from "react-icons/gi";
 import { FaSignal } from "react-icons/fa";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 function Projects() {
   const projects = [
     {
@@ -47,41 +48,63 @@ function Projects() {
     },
   ];
   return (
-    <div
-      id="work"
-      className=" z-[100] h-fit bg-zinc-900 w-full p-20 px-8 md:px-20 rounded-t-3xl"
-    >
-      <div>
-        <h1 className=" text-white text-[6vw] leading-[6vw] font-semibold pb-10 border-b-[1px] w-fit border-white">
-          Featured Projects
-        </h1>
-      </div>
-      <div className=" pt-20 flex flex-wrap box-border gap-6 md:gap-0 ">
-        {projects.flatMap((item, index) => (
-          <div className=" relative w-full md:w-[33%] h-[35vh] md:h-[50vh] my-2 md:my-0 overflow-hidden md:border-2 md:border-[#cff34d] projectImage">
-            <img
-              src={item.image}
-              alt="Project Image"
-              className=" h-full w-full bg-cover bg-black text-center flex items-center justify-center text-xl text-white"
-            />
-            <div className=" projectLink " rel="noopener">
-              <div className=" flex items-center justify-center gap-3 flex-col">
-                <p className=" md:text-xl font-semibold ">{item.name} </p>
-                <div className=" flex items-center justify-center gap-1 text-zinc-900">
-                  <p className=" md:text-xl font-semibold ">Tech Stack : </p>
-                  <span>{item.techStack}</span>
+    <div className="bg-[#080b1b]">
+      <div
+        id="work"
+        className=" z-[100] h-fit  bg-[#3b82f680] w-full p-20 px-8 pb-10 md:px-20 rounded-t-3xl"
+      >
+        <div>
+          <h1 className=" text-zinc-900 text-[6vw] leading-[6vw] md:text-4xl md:leading-3 font-semibold pb-3 md:pb-8 mb-10 border-b-[1px] w-fit border-zinc-900">
+            Featured Projects
+          </h1>
+        </div>
+        <div className=" flex w-[100%] pt-[30px] h-auto items-center justify-evenly overflow-hidden gap-8 bg-transparent">
+          <Carousel
+            autoPlay={true}
+            interval={2000}
+            infiniteLoop={true}
+            showThumbs={false}
+            showIndicators={true}
+            stopOnHover={false}
+            transitionTime={500}
+            centerMode
+            centerSlidePercentage={innerWidth > 900 ? 25 : 60}
+            selectedItem={1}
+          >
+            {/* bg-[hsl(250,100%,61%)] */}
+            {projects.map((item, index) => (
+              <div
+                key={index}
+                className=" flex flex-col items-center justify-between max-w-[300px] md:max-w-[330px] h-auto m-6 mb-10 mx-auto bg-[hsl(250,100%,61%)] rounded-lg text-center cursor-pointer hover:-translate-y-4 duration-300 "
+              >
+                <img
+                  src={item.image}
+                  className=" w-[100%] h-[200px] max-h-[200px] object-cover object-top rounded-t-lg "
+                />
+                <div className=" flex flex-col items-start text-white">
+                  <h3 className=" text-white text-xl font-semibold w-fit mx-auto">
+                    {item.name}
+                  </h3>
+                  <p className=" text-start p-3">
+                    <b>About : </b>
+                    uosegtruiou bevils ebgrils ebtguosegtrui oubevilsebgrilse
+                    btguose
+                  </p>
+                  <p className=" text-start p-3 truncate">
+                    <b>TechStack : </b>
+                    {item.techStack}
+                  </p>
+                  <a
+                    href={item.link}
+                    className=" w-fit mx-auto text-purple-600 font-normal text-base flex gap-2 items-center justify-center bg-white p-3 mb-3 rounded-lg"
+                  >
+                    <FaSignal /> Live Demo
+                  </a>
                 </div>
-                <a
-                  className=" flex items-center justify-center gap-1 text-xl uppercase font-semibold p-3 rounded-lg hover:scale-150 duration-300 bg-white border-black"
-                  href={item.link}
-                  target="_blank"
-                >
-                  <FaSignal /> Go Live
-                </a>
               </div>
-            </div>
-          </div>
-        ))}
+            ))}
+          </Carousel>
+        </div>
       </div>
     </div>
   );

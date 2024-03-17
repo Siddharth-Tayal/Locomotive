@@ -12,11 +12,11 @@ function Skills() {
     },
     {
       img: "https://rajesh-mern-stack-portfolio-images.s3.ap-south-1.amazonaws.com/assets/tech/javascript.png",
-      text: "Java Script",
+      text: "Javascript",
     },
     {
       img: "https://rajesh-mern-stack-portfolio-images.s3.ap-south-1.amazonaws.com/assets/tech/tailwind.png",
-      text: "Tailwind CSS",
+      text: "Tailwind",
     },
     {
       img: "https://rajesh-mern-stack-portfolio-images.s3.ap-south-1.amazonaws.com/assets/tech/reactjs.png",
@@ -86,50 +86,50 @@ function Skills() {
     },
     {
       img: "https://rajesh-mern-stack-portfolio-images.s3.ap-south-1.amazonaws.com/assets/tools/mongodbCompass.png",
-      text: "Mongo DB Compass",
+      text: " Compass",
     },
   ];
   return (
     <div className="bg-[#cdea68]">
       <div
         id="skills"
-        className=" z-[100] h-fit bg-[rgb(46,16,101)] w-full p-20 px-8 md:px-20 rounded-t-3xl"
+        className=" z-[100] h-fit bg-[#080b1b] w-full py-20 md:px-20 rounded-t-3xl"
       >
         <div>
-          <h1 className=" text-white text-[7vw] leading-[7vw] font-semibold">
+          <h1 className=" text-white text-[6vw] leading-[6vw] md:text-4xl md:leading-3 font-semibold ml-8 md:ml-0 p-3 pb-3 md:pb-6 mb-10 border-b-[1px] w-fit border-white">
             Skills{" "}
           </h1>
-          <div className="flex flex-wrap items-center justify-center  gap-6 sm:gap-9 my-9 md:my-5 max-w-screen-lg mx-auto">
+          <div className="flex flex-wrap items-center justify-center px-4 md:px-0 gap-6 my-9 md:my-5 max-w-screen-lg mx-auto">
             {skills.map((item, index) => (
               <div
                 key={index}
-                className=" w-[80px] md:w-[120px] flex flex-col items-center justify-center gap-2"
+                className=" w-[95px] sm:w-[140px] cursor-pointer bg-[rgb(1,3,10)] flex flex-col items-center justify-center gap-2 rounded-lg p-3 py-5 shadow-sm shadow-white"
               >
                 <img
                   src={item.img}
                   className="h-[50px] w-[50px] sm:h-[70px] sm:w-[70px]  "
                 />{" "}
-                <p className=" truncate text-sm sm:text-base font-semibold text-white">
+                <p className=" truncate text-xs sm:text-base font-semibold text-white">
                   {item.text}
                 </p>
               </div>
             ))}
           </div>
           <div className=" border-t-[1px] pt-10 border-[#a1b562]">
-            <h1 className=" text-white text-[4vw] md:leading-[4vw] font-semibold md:font-normal">
-              Tools & Software{" "}
+            <h1 className=" text-white text-[6vw] leading-[6vw] md:text-4xl md:leading-3 font-semibold ml-8 md:ml-0 p-3 pb-3 md:pb-6 mb-10 border-b-[1px] w-fit border-white">
+              Tools and Software{" "}
             </h1>
-            <div className="flex flex-wrap items-center justify-center  gap-6 sm:gap-9 my-9 md:my-5 max-w-screen-lg mx-auto">
+            <div className="flex flex-wrap items-center justify-center px-4 md:px-0 gap-6 my-9 md:my-5 max-w-screen-lg mx-auto">
               {software.map((item, index) => (
                 <div
                   key={index}
-                  className=" flex flex-col items-center justify-center gap-2"
+                  className=" w-[95px] sm:w-[140px] cursor-pointer bg-[rgb(1,3,10)] flex flex-col items-center justify-center gap-2 rounded-lg p-3 py-5 shadow-sm shadow-white"
                 >
                   <img
                     src={item.img}
                     className="h-[50px] w-[50px] sm:h-[70px] sm:w-[70px]  "
                   />{" "}
-                  <p className=" px-2 text-sm sm:text-base font-semibold text-white overflow-hidden ">
+                  <p className=" truncate text-xs sm:text-base font-semibold text-white">
                     {item.text}
                   </p>
                 </div>

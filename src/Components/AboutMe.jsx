@@ -8,7 +8,9 @@ function AboutMe() {
       id="about"
       className=" z-[100] h-fit bg-[#cdea68] w-full p-20 px-8 md:px-20 rounded-t-3xl"
     >
-      <h1 className=" text-[7vw] leading-[7vw] font-semibold">About Me</h1>
+      <h1 className=" text-black text-[6vw] leading-[6vw] md:text-4xl md:leading-3 font-semibold pb-10 mb-10 border-b-[1px] w-fit border-black">
+        About Me
+      </h1>
       <p className=" text-base md:text-2xl text-zinc-800 my-5">
         I'm a skilled software developer with experience in JavaScript, and
         expertise in frameworks like React, Node.js, Express.js and MongoDB. I'm
@@ -17,7 +19,7 @@ function AboutMe() {
         problems. Let's work together to bring your ideas to life!
       </p>
       <div className=" border-t-[1px] pt-10 border-[#a1b562]">
-        <h1 className=" text-[4vw] md:leading-[4vw] font-semibold md:font-normal">
+        <h1 className=" text-black text-[6vw] leading-[6vw] md:text-4xl md:leading-3 font-semibold pb-10 mb-10 border-b-[1px] w-fit border-black">
           My Approach{" "}
         </h1>
         <p className=" text-sm md:text-xl text-zinc-800 my-5">

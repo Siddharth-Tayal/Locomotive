@@ -21,7 +21,7 @@ export function App() {
   });
   return (
     //
-    <motion.div className=" bg-zinc-900 ">
+    <motion.div className=" -z-50">
       {/* <Navbar /> */}
       <Navbar2 />
       <Home />

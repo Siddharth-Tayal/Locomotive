@@ -118,7 +118,7 @@ const App = () => {
   const fadeInTransition = { duration: 1 };
   return (
     <motion.nav
-      className="flex text-white items-center fixed z-[999] bg-zinc-900 w-full top-0 left-0  justify-between px-[20px] md:px-[45px] py-[25px]"
+      className="flex backdrop-blur-lg text-white items-center fixed z-[999] bg-transparent w-full top-0 left-0  justify-between px-[20px] md:px-[45px] py-3"
       initial="closed"
       animate={mobileNavOpen ? "opened" : "closed"}
     >
@@ -141,7 +141,7 @@ const App = () => {
             animate={{ y: 0 }}
             class="flex cursor-pointer font-[Ojuju] text-[15px] sm:text-[20px] md:text-[30px] font-extrabold text-zinc-100 "
           >
-            MERN Stack Developer
+            MERN Developer
           </motion.h1>
         </a>
       </div>

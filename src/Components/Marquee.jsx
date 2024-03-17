@@ -13,29 +13,21 @@ function Marquee() {
       <div className=" z-10 w-full py-10 rounded-t-3xl bg-[#004D43]">
         <div className="text border-t-2 border-b-2 w-full  py-10 border-zinc-300 flex items-center px-3 overflow-hidden">
           <motion.h1
-            initial={{ x: 0 }}
+            initial={{ x: "0%" }}
             animate={{ x: "-100%" }}
-            transition={{ ease: "linear", repeat: Infinity, duration: 5 }}
-            className=" text-3xl pr-20 md:text-6xl uppercase font-bold text-white whitespace-nowrap"
+            transition={{ ease: "linear", repeat: Infinity, duration: 7 }}
+            className=" text-3xl pr-20 md:text-6xl uppercase font-bold text-white whitespace-nowrap flex items-center justify-center gap-[50px]"
           >
-            Frontend Developer{" "}
+            <p>Frontend Developer</p> <p>Backend Developer</p>
           </motion.h1>{" "}
           <motion.h1
-            initial={{ x: 0 }}
+            initial={{ x: "0%" }}
             animate={{ x: "-100%" }}
-            transition={{ ease: "linear", repeat: Infinity, duration: 5 }}
-            className=" text-3xl pr-20 md:text-6xl uppercase font-bold text-white whitespace-nowrap"
+            transition={{ ease: "linear", repeat: Infinity, duration: 7 }}
+            className=" text-3xl pr-20 md:text-6xl uppercase font-bold text-white whitespace-nowrap flex items-center justify-center gap-[50px]"
           >
-            Backend Developer{" "}
+            <p>Frontend Developer</p> <p>Backend Developer</p>
           </motion.h1>{" "}
-          {/* <motion.h1
-          initial={{ x: 0 }}
-          animate={{ x: "-100%" }}
-          transition={{ ease: "linear", repeat: Infinity, duration: 4 }}
-          className=" text-3xl pr-20 md:text-6xl uppercase font-bold text-white whitespace-nowrap"
-        >
-          Full Stack Developer{" "}
-        </motion.h1>{" "} */}
         </div>
       </div>
       <AboutMe />
