@@ -1,18 +1,10 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
-import AboutMe from "./AboutMe";
 import { TiTickOutline } from "react-icons/ti";
 import { IoCalendarNumberSharp } from "react-icons/io5";
 import { GrGroup } from "react-icons/gr";
-import { Line, Circle } from "rc-progress";
-import Skills from "./Skills";
-import Marquee from "./Marquee";
-import Projects from "./Projects";
 import Countup from "react-countup";
 function Home() {
-  const [projects, setProjects] = useState(0);
-  const [clients, setClients] = useState(0);
-  const [experience, setExperience] = useState(0);
   return (
     <motion.div
       data-scroll
