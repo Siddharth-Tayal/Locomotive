@@ -12,21 +12,13 @@ export function App() {
   const locomotiveScroll = new LocomotiveScroll({
     el: document.querySelector(".smooth-scroll"),
     smooth: true,
-    mobile: {
-      smooth: true,
-    },
-    tablet: {
-      smooth: true,
-    },
   });
   return (
-    //
     <motion.div className=" -z-50">
-      {/* <Navbar /> */}
-      <Navbar2 />
+      {/* <Navbar2 /> */}
+      <Navbar />
       <Home />
       <Marquee />
-      {/* <AboutMe /> */}
       <Skills />
       <Projects />
       <Contact />

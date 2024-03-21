@@ -35,7 +35,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="bg-[#cdea68]">
+    <div className="bg-blue-500">
       <div
         id="contact"
         className=" z-[100] h-fit bg-[#004D43] w-full p-20 px-8 md:px-20  rounded-t-3xl flex flex-col items-center justify-center gap-9 text-white"

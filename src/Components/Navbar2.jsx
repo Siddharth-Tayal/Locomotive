@@ -4,7 +4,6 @@ import Logo from "../assets/logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-
 const MOBILE_NAV_ITEMS = [
   {
     id: 0,
@@ -32,7 +31,6 @@ const MOBILE_NAV_ITEMS = [
     link: "/#contact",
   },
 ];
-
 const App = () => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const hideNavItemsVariant = {

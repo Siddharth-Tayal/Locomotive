@@ -51,10 +51,10 @@ function Projects() {
     <div className="bg-[#080b1b]">
       <div
         id="work"
-        className=" z-[100] h-fit  bg-[#3b82f680] w-full p-20 px-8 pb-10 md:px-20 rounded-t-3xl"
+        className=" z-[100] h-fit  bg-blue-500 w-full p-20 px-8 pb-10 md:px-20 rounded-t-3xl"
       >
         <div>
-          <h1 className=" text-zinc-900 text-[6vw] leading-[6vw] md:text-4xl md:leading-3 font-semibold pb-3 md:pb-8 mb-10 border-b-[1px] w-fit border-zinc-900">
+          <h1 className=" text-white text-[6vw] leading-[6vw] md:text-4xl md:leading-3 font-semibold pb-3 md:pb-8 mb-10 border-b-[1px] w-fit border-white">
             Featured Projects
           </h1>
         </div>

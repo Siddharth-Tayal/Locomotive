@@ -1,5 +1,6 @@
 import React from "react";
-
+import Lottie from "react-lottie";
+import Data from "../assets/animation.json";
 function Skills() {
   const skills = [
     {
@@ -89,12 +90,21 @@ function Skills() {
       text: " Compass",
     },
   ];
+  const defaultOptions3 = {
+    loop: true,
+    autoplay: true,
+    animationData: Data,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   return (
-    <div className="bg-[#cdea68]">
-      <div
-        id="skills"
-        className=" z-[100] h-fit bg-[#080b1b] w-full py-20 md:px-20 rounded-t-3xl"
-      >
+    <div className=" h-fit bg-black">
+      {" "}
+      {/* <div className=" absolute h-[100%] w-[100vw] flex items-center justify-center -z-10">
+        <Lottie options={defaultOptions3} />
+      </div> */}
+      <div id="skills" className=" h-fit w-full py-20 md:px-20 rounded-t-3xl">
         <div>
           <h1 className=" text-white text-[6vw] leading-[6vw] md:text-4xl md:leading-3 font-semibold ml-8 md:ml-0 p-3 pb-3 md:pb-6 mb-10 border-b-[1px] w-fit border-white">
             Skills{" "}

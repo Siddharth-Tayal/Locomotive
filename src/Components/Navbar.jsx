@@ -1,67 +1,35 @@
-import React, { useState } from "react";
-import Logo from "../assets/logo.png";
-import { motion } from "framer-motion";
-
+import React from "react";
+import {
+  FaArrowAltCircleUp,
+  FaLongArrowAltUp,
+  FaRProject,
+} from "react-icons/fa";
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-  const variants = {
-    open: { opacity: 1, x: 0 },
-    closed: { opacity: 0, x: "-100%" },
-  };
-
-  const links = [
-    {
-      text: "home",
-      link: "",
-    },
-    {
-      text: "about",
-      link: "about",
-    },
-    {
-      text: "skills",
-      link: "skills",
-    },
-    {
-      text: "work",
-      link: "work",
-    },
-    {
-      text: "conact",
-      link: "contact",
-    },
-  ];
   return (
-    <div className=" ">
-      <div className="fixed z-[99] w-full px-6 md:px-20 py-5 flex items-center justify-between">
-        <a class="flex items-center gap-2" href="/">
-          <motion.img
-            initial={{ x: -100 }}
-            animate={{ x: 0 }}
-            loading="lazy"
-            src={Logo}
-            alt=" logo"
-            class="h-9 w-9 object-contain"
-          />
-          <motion.h1
-            initial={{ y: -50 }}
-            animate={{ y: 0 }}
-            class="flex cursor-pointer font-[Ojuju] text-[20px] md:text-[30px] font-extrabold text-zinc-100 "
-          >
-            MERN Stack Developer
-          </motion.h1>
+    <div className="bg-white backdrop-blur-lg fixed py-2 px-3 w-full top-0 left-0 h-[7vh] font-mont z-10 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] flex items-center">
+      <div className=" w-full md:max-w-screen-lg mx-auto flex justify-between items-center">
+        <a
+          className="md:text-xl md:font-extrabold uppercase text-lg font-extrabold"
+          href=""
+        >
+          MERN<span className=" text-[#FA7F5C]">Developer</span>
         </a>
-        <div className=" hidden lg:flex">
-          {links.map((item, index) => (
-            <a
-              key={index}
-              href={`/#${item.link}`}
-              className={` uppercase p-1 text-zinc-100 hover:border-b-2 mx-2 hover:border-white`}
-            >
-              {item.text}
-            </a>
-          ))}
-        </div>{" "}
+        <div className="flex md:gap-4 gap-2">
+          <a
+            href="#work"
+            className="text-black border border-black md:px-3 md:py-1.5 rounded-sm px-2 py-1.5 text-[14px] md:text-[15px] font-sans font-medium flex items-center gap-1.5"
+          >
+            <FaRProject /> My Work
+          </a>
+          <a
+            className="bg-[#FA7F5C] text-white md:px-3 md:py-1.5 px-2 py-1.5 rounded-sm text-[14px] md:text-[15px] font-sans"
+            href="#contact"
+          >
+            <span className="flex items-center justify-center gap-1">
+              Hire Me <FaArrowAltCircleUp className=" rotate-45" />{" "}
+            </span>
+          </a>
+        </div>
       </div>
     </div>
   );
