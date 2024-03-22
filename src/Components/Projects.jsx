@@ -15,82 +15,95 @@ function Projects() {
       link: "https://technofest.onrender.com/",
       techStack: "React JS + Firebase",
       name: "TechnoFest",
+      description:
+        "Designed and implemented a beautifull Website for InterCollege Techno-Managment Fest using React and Firebase. The application allowing users to register and stay updated regarding the Fest.",
     },
     {
       image: Urban,
       link: "https://urbanvilla-real-estate.onrender.com",
       techStack: "MERN Stack + Firebase",
       name: "Urban Villa",
+      description:
+        "At UrbanVilla, we harness the power of a dynamic and robust technology stack to deliver a seamless and modern real estate experience. Our platform is built upon a fusion of the MERN stack and Firebase, creating a powerful synergy that combines flexibility, scalability, and real-time capabilities. At UrbanVilla, our commitment to technological excellence is reflected in our choice of the MERN stack and Firebase, creating a digital environment where your real estate journey is as modern and dynamic as the urban lifestyle we celebrate.",
     },
     {
       image: Foto,
       link: "https://foto-fiesta.onrender.com",
       techStack: "MERN Stack",
       name: "Foto-Fiesta",
+      description:
+        "Introducing Foto-Fiesta, a cutting-edge social media platform meticulously crafted using the MERN (MongoDB, Express.js, React.js, Node.js) stack. This dynamic application offers users a seamless and secure experience, with robust user authentication and a user-friendly password recovery system. Foto-Fiesta is not just about sharing photos; it's a hub for meaningful connections. Users can effortlessly follow and unfollow friends, explore personalized feeds, and engage with captivating moments through the like and unlike features. Each user's profile serves as a digital canvas, allowing them to express themselves and showcase their best moments. The platform's responsive design ensures a consistent and enjoyable experience across various devices, empowering users to stay connected on the go. Foto-Fiesta's comprehensive notification system keeps users informed about new followers, likes, and comments, fostering a vibrant and interactive community. Join us on Foto-Fiesta, where photos come to life, and connections are made. Capture, share, and celebrate your world with us!\n\n\n\n\n\n\n",
     },
     {
       image: Crud,
       link: "https://react-crud-application-4fvq.onrender.com",
       techStack: "React JS",
       name: "React CRUD",
+      description:
+        "Designed and implemented a robust CRUD (Create, Read, Update, Delete) application using React, Redux Toolkit. The application serves as a task management system, allowing users to interact seamlessly with their tasks. Employed Redux Toolkit for efficient state management, ensuring a predictable and scalable architecture. Implemented slices, actions, and reducers for seamless integration with React components.",
     },
     {
       image: Voice,
       link: "https://react-transcripter.onrender.com/",
       techStack: "React JS",
       name: "React Transcripter",
+      description:
+        "Conceptualized, designed, and implemented a cutting-edge Voice-to-Text application using ReactJS, offering users an intuitive and hands-free text input experience. Developed a modular and responsive user interface with React components, ensuring a seamless and engaging user experience. Implemented state management to efficiently handle the dynamic nature of speech input and text output",
     },
     {
       image: Tic,
       link: "https://tic-tac-toe-yg1q.onrender.com",
       techStack: "React JS",
       name: "Tic Tac Toe",
+      description:
+        "Let's have fun with knowledge. Designed a beautiful Tic Tac Toe game in React Js.",
     },
   ];
   return (
-    <div className="bg-[#080b1b]">
+    <div className="bg-black">
       <div
         id="work"
-        className=" z-[100] h-fit  bg-blue-500 w-full p-20 px-8 pb-10 md:px-20 rounded-t-3xl"
+        className=" z-[100] h-fit py-20  bg-green-500 w-full pb-10  rounded-t-3xl"
       >
         <div>
-          <h1 className=" text-white text-[6vw] leading-[6vw] md:text-4xl md:leading-3 font-semibold pb-3 md:pb-8 mb-10 border-b-[1px] w-fit border-white">
+          <h1 className=" text-white text-[6vw] leading-[6vw] mx-8 md:mx-20  md:text-4xl md:leading-3 font-semibold pb-3 md:pb-8 mb-10 border-b-[1px] w-fit border-white">
             Featured Projects
           </h1>
         </div>
-        <div className=" flex w-[100%] pt-[30px] h-auto items-center justify-evenly overflow-hidden gap-8 bg-transparent">
+        <div className=" flex items-center justify-center overflow-hidden bg-transparent">
           <Carousel
             autoPlay={true}
             interval={2000}
             infiniteLoop={true}
             showThumbs={false}
             showIndicators={true}
-            stopOnHover={false}
+            stopOnHover={true}
             transitionTime={500}
             centerMode
-            centerSlidePercentage={innerWidth > 900 ? 25 : 60}
+            swipeable={false}
+            centerSlidePercentage={innerWidth && 15}
             selectedItem={1}
           >
-            {/* bg-[hsl(250,100%,61%)] */}
             {projects.map((item, index) => (
               <div
+                data-aos={index % 2 === 0 ? "fade-up" : "fade-down"}
                 key={index}
-                className=" flex flex-col items-center justify-between max-w-[300px] md:max-w-[330px] h-auto m-6 mb-10 mx-auto bg-[hsl(250,100%,61%)] rounded-lg text-center cursor-pointer hover:-translate-y-4 duration-300 "
+                // bg-[hsl(250,100%,61%)]
+                className=" flex flex-col cursor-pointer items-center justify-between w-[280px] md:w-[350px] mx-auto mt-3 mb-10 bg-blue-500 rounded-lg duration-150 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-purple-500 "
               >
                 <img
                   src={item.image}
                   className=" w-[100%] h-[200px] max-h-[200px] object-cover object-top rounded-t-lg "
                 />
-                <div className=" flex flex-col items-start text-white">
-                  <h3 className=" text-white text-xl font-semibold w-fit mx-auto">
+                <div className=" flex flex-col items-start text-white border-t-2 border-white font-extralight">
+                  <h3 className=" text-white text-base sm:text-xl font-semibold w-fit mx-auto">
                     {item.name}
                   </h3>
-                  <p className=" text-start p-3">
+                  <p className=" text-justify text-xs sm:text-sm px-3 my-2 line-clamp-3 ">
                     <b>About : </b>
-                    uosegtruiou bevils ebgrils ebtguosegtrui oubevilsebgrilse
-                    btguose
+                    {item.description}
                   </p>
-                  <p className=" text-start p-3 truncate">
+                  <p className=" text-start text-xs sm:text-sm px-3 my-2 line-clamp-1">
                     <b>TechStack : </b>
                     {item.techStack}
                   </p>

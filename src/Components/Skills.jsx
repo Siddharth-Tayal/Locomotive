@@ -1,5 +1,4 @@
 import React from "react";
-import Lottie from "react-lottie";
 import Data from "../assets/animation.json";
 function Skills() {
   const skills = [
@@ -106,7 +105,7 @@ function Skills() {
       </div> */}
       <div
         id="skills"
-        className=" h-fit w-full py-20 md:px-20 rounded-t-3xl bg-black"
+        className=" scroll-smooth h-fit w-full py-20 md:px-20 rounded-t-3xl bg-black"
       >
         <div>
           <h1 className=" text-white text-[6vw] leading-[6vw] md:text-4xl md:leading-3 font-semibold ml-8 md:ml-0 p-3 pb-3 md:pb-6 mb-10 border-b-[1px] w-fit border-white">
@@ -115,6 +114,7 @@ function Skills() {
           <div className="flex flex-wrap items-center justify-center px-4 md:px-0 gap-6 my-9 md:my-5 max-w-screen-lg mx-auto">
             {skills.map((item, index) => (
               <div
+                data-aos={index % 2 === 0 ? "flip-down" : "flip-right"}
                 key={index}
                 className=" w-[90px] sm:w-[140px] cursor-pointer bg-[rgb(1,3,10)] flex flex-col items-center justify-center gap-2 rounded-lg p-3 py-5 shadow-sm shadow-white"
               >
@@ -136,6 +136,7 @@ function Skills() {
               {software.map((item, index) => (
                 <div
                   key={index}
+                  data-aos={index % 2 === 0 ? "flip-down" : "flip-right"}
                   className=" w-[90px] sm:w-[140px] cursor-pointer bg-[rgb(1,3,10)] flex flex-col items-center justify-center gap-2 rounded-lg p-3 py-5 shadow-sm shadow-white"
                 >
                   <img

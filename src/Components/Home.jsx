@@ -1,19 +1,24 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
-import { TiTickOutline } from "react-icons/ti";
-import { IoCalendarNumberSharp } from "react-icons/io5";
-import { GrGithub, GrGroup, GrInstagram, GrLinkedin } from "react-icons/gr";
-import { FaArrowCircleDown, FaTelegram, FaWhatsapp } from "react-icons/fa";
-import Countup from "react-countup";
+import { GrGithub, GrInstagram, GrLinkedin } from "react-icons/gr";
+import {
+  FaArrowCircleDown,
+  FaHorseHead,
+  FaLaptop,
+  FaMobileAlt,
+  FaTelegram,
+  FaWhatsapp,
+} from "react-icons/fa";
 import Me from "../assets/Me-removebg.png";
+import { SiGeeksforgeeks } from "react-icons/si";
 function Home() {
   return (
     <div
-      // data-scroll
-      // data-scroll-section
-      // data-scroll-speed="-.9"
-      className=" overflow-hidden h-fit md:h-screen pt-[60px] md:pt-0  bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5lIw4FZ_UL38X85GgNDRTpGCNjYjsFg_XYA&usqp=CAU')]"
+      data-scroll
+      data-scroll-section
+      data-scroll-speed="-.9"
+      className=" overflow-hidden h-fit md:h-screen pt-[40px] md:pt-0  bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5lIw4FZ_UL38X85GgNDRTpGCNjYjsFg_XYA&usqp=CAU')]"
     >
       {" "}
       <div className=" h-[100%] w-[100%] flex flex-col items-center justify-evenly py-10 px-6">
@@ -33,7 +38,7 @@ function Home() {
             <motion.p
               initial={{ x: -5000 }}
               animate={{ x: 0 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.75 }}
               className=" md:text-xl text-black md:pb-10 gap-2 flex flex-col items-center md:items-start justify-center whitespace-nowrap"
             >
               <p className=" flex items-center justify-center gap-2">
@@ -56,73 +61,116 @@ function Home() {
                 {" "}
                 <a
                   href="#about"
-                  className=" flex items-center justify-center gap-2 py-2 px-3 rounded-full bg-blue-500 text-white hover:text-blue-500 hover:bg-white border-2 border-transparent hover:border-blue-500"
+                  className=" flex items-center justify-center gap-2 py-2 px-3 rounded-full bg-blue-500 text-white duration-200 hover:text-blue-500 hover:bg-white border-2 border-transparent hover:border-blue-500"
                 >
                   About Me <FaArrowCircleDown />
                 </a>{" "}
                 <a
-                  href="#about"
-                  className=" flex items-center justify-center gap-2 py-2 px-4 rounded-full bg-[#FA7F5C] text-white duration-200 border-2 border-transparent hover:bg-white hover:border-[#FA7F5C] hover:text-[#FA7F5C]"
+                  href="#skills"
+                  className=" scroll-smooth flex items-center justify-center gap-2 py-2 px-4 rounded-full bg-[#FA7F5C] text-white duration-200 border-2 border-transparent hover:bg-white hover:border-[#FA7F5C] hover:text-[#FA7F5C]"
                 >
                   Skills <FaArrowCircleDown />
                 </a>
               </div>
             </motion.p>
-            <div className=" hidden md:flex flex-wrap items-center text-3xl gap-3">
-              <a href="" className=" rounded-full p-3 bg-blue-500 text-white">
+            <motion.div
+              initial={{ y: 5000 }}
+              animate={{ y: 0 }}
+              transition={{ duration: 1 }}
+              className=" hidden md:flex flex-wrap items-center text-3xl gap-3"
+            >
+              <a
+                href="https://www.linkedin.com/in/siddharth-tayal-65203a266/"
+                className=" rounded-full p-3 bg-blue-500 text-white duration-300 hover:bg-[#FA7F5C] "
+              >
                 {" "}
                 <GrLinkedin />{" "}
               </a>
-              <a href="" className=" rounded-full p-3 bg-blue-500 text-white">
+              <a
+                href="https://www.instagram.com/s_tayal_01/"
+                className=" rounded-full p-3 bg-blue-500 text-white duration-300 hover:bg-[#FA7F5C] "
+              >
                 {" "}
                 <GrInstagram />{" "}
               </a>
-              <a href="" className=" rounded-full p-3 bg-blue-500 text-white">
+              <a
+                href="https://github.com/Siddharth-Tayal"
+                className=" rounded-full p-3 bg-blue-500 text-white duration-300 hover:bg-[#FA7F5C] "
+              >
                 {" "}
                 <GrGithub />{" "}
               </a>
-              <a href="" className=" rounded-full p-3 bg-blue-500 text-white">
+              <a
+                href="https://auth.geeksforgeeks.org/user/siddharth_tayal/?utm_source=geeksforgeeks&utm_medium=colleges&utm_campaign=users"
+                className=" rounded-full p-3 bg-blue-500 text-white duration-300 hover:bg-[#FA7F5C] "
+              >
                 {" "}
-                <FaTelegram />{" "}
+                <SiGeeksforgeeks />{" "}
               </a>
-              <a href="" className=" rounded-full p-3 bg-blue-500 text-white">
+              <a
+                href="whatsapp:contact=8813055897@s.whatsapp.com&message='I'd like to chat with you'"
+                className=" rounded-full p-3 bg-blue-500 text-white duration-300 hover:bg-[#FA7F5C] "
+              >
                 {" "}
                 <FaWhatsapp />{" "}
               </a>
-            </div>
+            </motion.div>
           </div>
           <div className=" flex flex-col gap-3 items-center justify-center">
-            <img
+            <motion.img
+              initial={{ x: 5000 }}
+              animate={{ x: 0 }}
+              transition={{ duration: 1 }}
               src={Me}
-              className=" rounded-full h-[250px] lg:h-[350px] bg-transparent w-[250px] lg:w-[350px] border-[#FA7F5C] border-b-[10px] "
+              className=" rounded-full h-[250px] lg:h-[350px] bg-transparent w-[250px] lg:w-[400px] border-[#FA7F5C] border-b-[6px] "
               alt=""
             />
-            <div className=" flex md:hidden items-center text-3xl gap-3">
-              <a href="" className=" rounded-full p-3 bg-blue-500 text-white">
+            <motion.div
+              initial={{ y: 5000 }}
+              animate={{ y: 0 }}
+              transition={{ duration: 1 }}
+              className=" flex md:hidden flex-wrap items-center text-3xl gap-3"
+            >
+              <a
+                href="https://www.linkedin.com/in/siddharth-tayal-65203a266/"
+                className=" rounded-full p-3 bg-blue-500 text-white duration-300 hover:bg-[#FA7F5C] "
+              >
                 {" "}
                 <GrLinkedin />{" "}
               </a>
-              <a href="" className=" rounded-full p-3 bg-blue-500 text-white">
+              <a
+                href="https://www.instagram.com/s_tayal_01/"
+                className=" rounded-full p-3 bg-blue-500 text-white duration-300 hover:bg-[#FA7F5C] "
+              >
                 {" "}
                 <GrInstagram />{" "}
               </a>
-              <a href="" className=" rounded-full p-3 bg-blue-500 text-white">
+              <a
+                href="https://github.com/Siddharth-Tayal"
+                className=" rounded-full p-3 bg-blue-500 text-white duration-300 hover:bg-[#FA7F5C] "
+              >
                 {" "}
                 <GrGithub />{" "}
               </a>
-              <a href="" className=" rounded-full p-3 bg-blue-500 text-white">
+              <a
+                href="https://auth.geeksforgeeks.org/user/siddharth_tayal/?utm_source=geeksforgeeks&utm_medium=colleges&utm_campaign=users"
+                className=" rounded-full p-3 bg-blue-500 text-white duration-300 hover:bg-[#FA7F5C] "
+              >
                 {" "}
-                <FaTelegram />{" "}
+                <SiGeeksforgeeks />{" "}
               </a>
-              <a href="" className=" rounded-full p-3 bg-blue-500 text-white">
+              <a
+                href="whatsapp:contact=8813055897@s.whatsapp.com&message='I'd like to chat with you'"
+                className=" rounded-full p-3 bg-blue-500 text-white duration-300 hover:bg-[#FA7F5C] "
+              >
                 {" "}
                 <FaWhatsapp />{" "}
               </a>
-            </div>
+            </motion.div>
           </div>
         </div>
-        <div className="flex items-center justify-evenly flex-wrap gap-[50px] md:w-[70%]">
-          <div className=" flex flex-col items-center justify-center text-[#FA7F5C] gap-2">
+        <div className="flex items-center justify-evenly flex-wrap pt-10 gap-[50px] md:w-[70%]">
+          {/* <div className=" flex flex-col items-center justify-center text-[#FA7F5C] gap-2">
             <TiTickOutline className=" text-4xl md:text-6xl" />
             <div className="flex items-center justify-center gap-1 ">
               <Countup
@@ -160,7 +208,34 @@ function Home() {
               <p className="text-3xl font-semibold">+</p>
             </div>
             <p className=" text-sm sm:text-base">Total Clients</p>
-          </div>
+          </div> */}
+          <motion.div
+            initial={{ x: -5000 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 1 }}
+            className=" flex flex-col items-center justify-center gap-1 text-blue-500 font-semibold uppercase text-sm sm:text-base"
+          >
+            <FaLaptop className=" text-5xl text-[#FA7F5C]" />
+            Web Designs
+          </motion.div>{" "}
+          <motion.div
+            initial={{ y: 5000 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 1 }}
+            className=" flex flex-col items-center justify-center gap-1 text-blue-500 font-semibold uppercase text-sm sm:text-base"
+          >
+            <FaMobileAlt className=" text-5xl text-[#FA7F5C]" />
+            Mobile Designs
+          </motion.div>{" "}
+          <motion.div
+            initial={{ x: 5000 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 1 }}
+            className=" flex flex-col items-center justify-center gap-1 text-blue-500 font-semibold uppercase text-sm sm:text-base"
+          >
+            <FaHorseHead className=" text-5xl text-[#FA7F5C]" />
+            Problem Solving
+          </motion.div>
         </div>
       </div>
     </div>
