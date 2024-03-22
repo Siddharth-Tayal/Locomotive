@@ -99,12 +99,15 @@ function Skills() {
     },
   };
   return (
-    <div className=" h-fit bg-black">
+    <div className=" h-fit bg-[#cdea68]">
       {" "}
       {/* <div className=" absolute h-[100%] w-[100vw] flex items-center justify-center -z-10">
         <Lottie options={defaultOptions3} />
       </div> */}
-      <div id="skills" className=" h-fit w-full py-20 md:px-20 rounded-t-3xl">
+      <div
+        id="skills"
+        className=" h-fit w-full py-20 md:px-20 rounded-t-3xl bg-black"
+      >
         <div>
           <h1 className=" text-white text-[6vw] leading-[6vw] md:text-4xl md:leading-3 font-semibold ml-8 md:ml-0 p-3 pb-3 md:pb-6 mb-10 border-b-[1px] w-fit border-white">
             Skills{" "}
@@ -113,7 +116,7 @@ function Skills() {
             {skills.map((item, index) => (
               <div
                 key={index}
-                className=" w-[95px] sm:w-[140px] cursor-pointer bg-[rgb(1,3,10)] flex flex-col items-center justify-center gap-2 rounded-lg p-3 py-5 shadow-sm shadow-white"
+                className=" w-[90px] sm:w-[140px] cursor-pointer bg-[rgb(1,3,10)] flex flex-col items-center justify-center gap-2 rounded-lg p-3 py-5 shadow-sm shadow-white"
               >
                 <img
                   src={item.img}
@@ -133,7 +136,7 @@ function Skills() {
               {software.map((item, index) => (
                 <div
                   key={index}
-                  className=" w-[95px] sm:w-[140px] cursor-pointer bg-[rgb(1,3,10)] flex flex-col items-center justify-center gap-2 rounded-lg p-3 py-5 shadow-sm shadow-white"
+                  className=" w-[90px] sm:w-[140px] cursor-pointer bg-[rgb(1,3,10)] flex flex-col items-center justify-center gap-2 rounded-lg p-3 py-5 shadow-sm shadow-white"
                 >
                   <img
                     src={item.img}
