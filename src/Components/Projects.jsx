@@ -76,7 +76,7 @@ function Projects() {
                     className="flip-box-front text-center bg-white border-white border bg-[url('https://s25.postimg.cc/frbd9towf/cta-2.png')] "
                     style={{
                       backgroundImage: `url(${item.image})`,
-                      backgroundSize: "cover",
+                      backgroundSize:  `${index === 3? "contain" :"cover"}`,
                       backgroundBlendMode: "multiply",
                       backgroundRepeat: "no-repeat",
                       backgroundPosition: "center",
