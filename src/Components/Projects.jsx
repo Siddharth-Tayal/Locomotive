@@ -5,7 +5,11 @@ import Tic from "../assets/Tic.jpg";
 import Urban from "../assets/Urban.png";
 import Voice from "../assets/Voice.png";
 import Crud from "../assets/Crud.png";
-import { FaSignal } from "react-icons/fa";
+import {
+  FaArrowAltCircleDown,
+  FaArrowAltCircleRight,
+  FaSignal,
+} from "react-icons/fa";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 function Projects() {
@@ -63,7 +67,8 @@ function Projects() {
     <div className="bg-black">
       <div
         id="work"
-        className=" z-[100] h-fit py-20  bg-green-500 w-full pb-10  rounded-t-3xl"
+        // bg-[#FA7F5C]
+        className=" z-[100] h-fit py-20 bg-green-500  w-full pb-10  rounded-t-3xl"
       >
         <div>
           <h1 className=" text-white text-[6vw] leading-[6vw] mx-8 md:mx-20  md:text-4xl md:leading-3 font-semibold pb-3 md:pb-8 mb-10 border-b-[1px] w-fit border-white">
@@ -71,52 +76,47 @@ function Projects() {
           </h1>
         </div>
         <div className=" flex items-center justify-center overflow-hidden bg-transparent">
-          <Carousel
-            autoPlay={true}
-            interval={2000}
-            infiniteLoop={true}
-            showThumbs={false}
-            showIndicators={true}
-            stopOnHover={true}
-            transitionTime={500}
-            centerMode
-            swipeable={false}
-            centerSlidePercentage={innerWidth && 15}
-            selectedItem={1}
-          >
+          <div className="box-container">
             {projects.map((item, index) => (
-              <div
-                data-aos={index % 2 === 0 ? "fade-up" : "fade-down"}
-                key={index}
-                // bg-[hsl(250,100%,61%)]
-                className=" flex flex-col cursor-pointer items-center justify-between w-[280px] md:w-[350px] mx-auto mt-3 mb-10 bg-blue-500 rounded-lg duration-150 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-purple-500 "
-              >
-                <img
-                  src={item.image}
-                  className=" w-[100%] h-[200px] max-h-[200px] object-cover object-top rounded-t-lg "
-                />
-                <div className=" flex flex-col items-start text-white border-t-2 border-white font-extralight">
-                  <h3 className=" text-white text-base sm:text-xl font-semibold w-fit mx-auto">
-                    {item.name}
-                  </h3>
-                  <p className=" text-justify text-xs sm:text-sm px-3 my-2 line-clamp-3 ">
-                    <b>About : </b>
-                    {item.description}
-                  </p>
-                  <p className=" text-start text-xs sm:text-sm px-3 my-2 line-clamp-1">
-                    <b>TechStack : </b>
-                    {item.techStack}
-                  </p>
-                  <a
-                    href={item.link}
-                    className=" w-fit mx-auto text-purple-600 font-normal text-base flex gap-2 items-center justify-center bg-white p-3 mb-3 rounded-lg"
+              <div className="box-item rounded-[8px] " key={index}>
+                <div className="flip-box">
+                  <div
+                    className="flip-box-front text-center border-white border bg-[url('https://s25.postimg.cc/frbd9towf/cta-2.png')] "
+                    style={{
+                      backgroundImage: `url(${item.image})`,
+                      backgroundSize: "cover",
+                      backgroundBlendMode: "multiply",
+                      backgroundRepeat: "repeat",
+                      backgroundPosition: "center",
+                      backgroundColor: "rgba(0,0,0,0)",
+                    }}
                   >
-                    <FaSignal /> Live Demo
-                  </a>
+                    <div className=" inner text-white">
+                      <FaArrowAltCircleRight className=" text-4xl text-white bg-black h-[70px] w-[70px] rounded-full" />
+                    </div>
+                  </div>
+                  <div className="flip-box-back text-center">
+                    <div className=" flex flex-col items-center rounded-[8px] bg-[url('https://s25.postimg.cc/frbd9towf/cta-2.png')] bg-cover bg-center h-[100%] p-3 justify-center text-justify text-white gap-[15px]">
+                      <h3 className=" text-4xl font-semibold text-center">
+                        {item.name}
+                      </h3>
+                      <p className=" line-clamp-5">{item.description}</p>
+                      <p className=" line-clamp-5 text-center">
+                        <b>Tech Stack : </b>
+                        {item.techStack}
+                      </p>
+                      <a
+                        href={item.link}
+                        className=" bg-transparent border-2 hover:scale-110 hover:shadow-md hover:shadow-white duration-200 border-white rounded-md text-white cursor-pointer text-[20px] font-bold py-[15px] px-[30px] uppercase"
+                      >
+                        Go Live
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
-          </Carousel>
+          </div>
         </div>
       </div>
     </div>

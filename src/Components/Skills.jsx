@@ -116,7 +116,7 @@ function Skills() {
               <div
                 data-aos={index % 2 === 0 ? "flip-down" : "flip-right"}
                 key={index}
-                className=" w-[90px] sm:w-[140px] cursor-pointer bg-[rgb(1,3,10)] flex flex-col items-center justify-center gap-2 rounded-lg p-3 py-5 shadow-sm shadow-white"
+                className=" w-[90px] sm:w-[140px] cursor-pointer bg-[rgb(1,3,10)] hover:bg-yellow-500 duration-300 flex flex-col items-center justify-center gap-2 rounded-lg p-3 py-5 shadow-sm shadow-white"
               >
                 <img
                   src={item.img}
@@ -137,7 +137,7 @@ function Skills() {
                 <div
                   key={index}
                   data-aos={index % 2 === 0 ? "flip-down" : "flip-right"}
-                  className=" w-[90px] sm:w-[140px] cursor-pointer bg-[rgb(1,3,10)] flex flex-col items-center justify-center gap-2 rounded-lg p-3 py-5 shadow-sm shadow-white"
+                  className=" hover:bg-yellow-500 duration-300 w-[90px] sm:w-[140px] cursor-pointer bg-[rgb(1,3,10)] flex flex-col items-center justify-center gap-2 rounded-lg p-3 py-5 shadow-sm shadow-white"
                 >
                   <img
                     src={item.img}

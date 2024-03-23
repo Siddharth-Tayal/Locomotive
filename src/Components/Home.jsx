@@ -77,7 +77,7 @@ function Home() {
               initial={{ y: 5000 }}
               animate={{ y: 0 }}
               transition={{ duration: 1 }}
-              className=" hidden md:flex flex-wrap items-center justify-center text-3xl gap-3"
+              className=" hidden md:flex flex-wrap items-center justify-start text-3xl gap-3"
             >
               <a
                 href="https://www.linkedin.com/in/siddharth-tayal-65203a266/"
