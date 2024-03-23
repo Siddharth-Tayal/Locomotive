@@ -157,13 +157,13 @@ export default function Contact() {
                   <div className="h-[28px] flex items-center justify-start gap-2 text-xs md:text-sm">
                     <a
                       className="w-[60px] md:w-[70px] whitespace-nowrap hover:opacity-60 duration-200 "
-                      href=""
+                      href="#"
                     >
                       Home
                     </a>
                     <a
                       className="w-[60px] md:w-[70px] whitespace-nowrap hover:opacity-60 duration-200 "
-                      href=""
+                      href="#about"
                     >
                       About Me
                     </a>
@@ -171,13 +171,13 @@ export default function Contact() {
                   <div className="h-[28px] flex items-center justify-start gap-2 text-xs md:text-sm">
                     <a
                       className=" w-[60px] md:w-[70px] whitespace-nowrap hover:opacity-60 duration-200 "
-                      href=""
+                      href="#skills"
                     >
                       Skills
                     </a>
                     <a
                       className=" w-[60px] md:w-[70px] whitespace-nowrap hover:opacity-60 duration-200 "
-                      href=""
+                      href="#work"
                     >
                       Projects
                     </a>
@@ -214,7 +214,7 @@ export default function Contact() {
                   <FaInstagram />
                 </a>{" "}
                 <a
-                  href="whatsapp:contact=8813055897@s.whatsapp.com&message='I'd like to chat with you'"
+                  href="https://wa.me/8813055897"
                   className=" hover:text-blue-500 duration-300"
                 >
                   <FaWhatsapp />

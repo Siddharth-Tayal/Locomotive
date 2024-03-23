@@ -18,10 +18,10 @@ function Home() {
       data-scroll
       data-scroll-section
       data-scroll-speed="-.9"
-      className=" overflow-hidden h-fit md:h-screen pt-[40px] md:pt-0  bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5lIw4FZ_UL38X85GgNDRTpGCNjYjsFg_XYA&usqp=CAU')]"
+      className=" overflow-hidden h-fit  pt-[35px] md:pt-[60px]  bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5lIw4FZ_UL38X85GgNDRTpGCNjYjsFg_XYA&usqp=CAU')]"
     >
       {" "}
-      <div className=" h-[100%] w-[100%] flex flex-col items-center justify-evenly py-10 px-6">
+      <div className=" h-[100%] w-[100%] flex flex-col items-center justify-evenly md:gap-10 py-10 px-6">
         <div className=" w-full flex flex-col md:flex-row items-center justify-between md:w-[90%] gap-[5px] md:gap-[50px]">
           <div className=" w-full">
             <motion.div
@@ -77,7 +77,7 @@ function Home() {
               initial={{ y: 5000 }}
               animate={{ y: 0 }}
               transition={{ duration: 1 }}
-              className=" hidden md:flex flex-wrap items-center justify-start text-3xl gap-3"
+              className=" hidden md:flex flex-wrap items-center justify-start  text-3xl gap-3"
             >
               <a
                 href="https://www.linkedin.com/in/siddharth-tayal-65203a266/"
@@ -108,7 +108,7 @@ function Home() {
                 <SiGeeksforgeeks />{" "}
               </a>
               <a
-                href="whatsapp:contact=8813055897@s.whatsapp.com&message='I'd like to chat with you'"
+                href="https://wa.me/8813055897"
                 className=" rounded-full p-3 bg-blue-500 text-white duration-300 hover:bg-[#FA7F5C] "
               >
                 {" "}
@@ -116,7 +116,7 @@ function Home() {
               </a>
             </motion.div>
           </div>
-          <div className=" flex flex-col gap-3 items-center justify-center">
+          <div className=" md:h-[350px] flex flex-col gap-3 items-center justify-center">
             <motion.img
               initial={{ x: 5000 }}
               animate={{ x: 0 }}
@@ -160,7 +160,7 @@ function Home() {
                 <SiGeeksforgeeks />{" "}
               </a>
               <a
-                href="whatsapp:contact=8813055897@s.whatsapp.com&message='I'd like to chat with you'"
+                href="https://wa.me/8813055897"
                 className=" rounded-full p-3 bg-blue-500 text-white duration-300 hover:bg-[#FA7F5C] "
               >
                 {" "}
@@ -169,7 +169,7 @@ function Home() {
             </motion.div>
           </div>
         </div>
-        <div className="flex items-center justify-evenly flex-wrap pt-10 gap-[50px] md:w-[70%]">
+        <div className="flex items-center justify-evenly flex-wrap pt-10 gap-[50px] md:w-[70%] md:mt-8 md:mb-9">
           {/* <div className=" flex flex-col items-center justify-center text-[#FA7F5C] gap-2">
             <TiTickOutline className=" text-4xl md:text-6xl" />
             <div className="flex items-center justify-center gap-1 ">

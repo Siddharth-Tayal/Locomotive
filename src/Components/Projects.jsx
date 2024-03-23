@@ -1,9 +1,9 @@
 import React from "react";
-import Foto from "../assets/Foto.png";
+import Foto from "../assets/Foto.jpg";
 import Techno from "../assets/Techno.png";
 import Tic from "../assets/Tic.jpg";
-import Urban from "../assets/Urban.png";
-import Voice from "../assets/Voice.png";
+import Urban from "../assets/Urban.jpg";
+import Voice from "../assets/Voice.jpg";
 import Crud from "../assets/Crud.png";
 import {
   FaArrowAltCircleDown,
@@ -81,19 +81,18 @@ function Projects() {
               <div className="box-item rounded-[8px] " key={index}>
                 <div className="flip-box">
                   <div
-                    className="flip-box-front text-center border-white border bg-[url('https://s25.postimg.cc/frbd9towf/cta-2.png')] "
+                    className="flip-box-front text-center bg-white border-white border bg-[url('https://s25.postimg.cc/frbd9towf/cta-2.png')] "
                     style={{
                       backgroundImage: `url(${item.image})`,
                       backgroundSize: "cover",
                       backgroundBlendMode: "multiply",
-                      backgroundRepeat: "repeat",
+                      backgroundRepeat: "no-repeat",
                       backgroundPosition: "center",
-                      backgroundColor: "rgba(0,0,0,0)",
                     }}
                   >
-                    <div className=" inner text-white">
+                    {/* <div className=" inner text-white">
                       <FaArrowAltCircleRight className=" text-4xl text-white bg-black h-[70px] w-[70px] rounded-full" />
-                    </div>
+                    </div> */}
                   </div>
                   <div className="flip-box-back text-center">
                     <div className=" flex flex-col items-center rounded-[8px] bg-[url('https://s25.postimg.cc/frbd9towf/cta-2.png')] bg-cover bg-center h-[100%] p-3 justify-center text-justify text-white gap-[15px]">
