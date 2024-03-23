@@ -214,7 +214,7 @@ export default function Contact() {
                   <FaInstagram />
                 </a>{" "}
                 <a
-                  href="https://wa.me/8813055897"
+                  href="https://wa.me/+918813055897"
                   className=" hover:text-blue-500 duration-300"
                 >
                   <FaWhatsapp />

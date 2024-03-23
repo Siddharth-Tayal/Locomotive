@@ -9,8 +9,8 @@
   box-sizing: border-box;
 }
 ::selection {
-  background-color: red;
-  color: yellowgreen;
+  background-color: green;
+  color: black;
 }
 
 .box-container {

@@ -12,6 +12,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 export function App() {
+  document.addEventListener("contextmenu", (e) => {
+    e.preventDefault();
+  });
   const locomotiveScroll = new LocomotiveScroll({
     el: document.querySelector(".smooth-scroll"),
     smooth: true,

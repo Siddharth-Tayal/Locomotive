@@ -5,13 +5,6 @@ import Tic from "../assets/Tic.jpg";
 import Urban from "../assets/Urban.jpg";
 import Voice from "../assets/Voice.jpg";
 import Crud from "../assets/Crud.png";
-import {
-  FaArrowAltCircleDown,
-  FaArrowAltCircleRight,
-  FaSignal,
-} from "react-icons/fa";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
 function Projects() {
   const projects = [
     {
@@ -67,7 +60,6 @@ function Projects() {
     <div className="bg-black">
       <div
         id="work"
-        // bg-[#FA7F5C]
         className=" z-[100] h-fit py-20 bg-green-500  w-full pb-10  rounded-t-3xl"
       >
         <div>
@@ -89,11 +81,7 @@ function Projects() {
                       backgroundRepeat: "no-repeat",
                       backgroundPosition: "center",
                     }}
-                  >
-                    {/* <div className=" inner text-white">
-                      <FaArrowAltCircleRight className=" text-4xl text-white bg-black h-[70px] w-[70px] rounded-full" />
-                    </div> */}
-                  </div>
+                  ></div>
                   <div className="flip-box-back text-center">
                     <div className=" flex flex-col items-center rounded-[8px] bg-[url('https://s25.postimg.cc/frbd9towf/cta-2.png')] bg-cover bg-center h-[100%] p-3 justify-center text-justify text-white gap-[15px]">
                       <h3 className=" text-4xl font-semibold text-center">
