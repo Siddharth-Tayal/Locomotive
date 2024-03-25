@@ -1,5 +1,4 @@
 import React from "react";
-import Data from "../assets/animation.json";
 function Skills() {
   const skills = [
     {
@@ -89,20 +88,8 @@ function Skills() {
       text: " Compass",
     },
   ];
-  const defaultOptions3 = {
-    loop: true,
-    autoplay: true,
-    animationData: Data,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
   return (
     <div className=" h-fit bg-[#cdea68]">
-      {" "}
-      {/* <div className=" absolute h-[100%] w-[100vw] flex items-center justify-center -z-10">
-        <Lottie options={defaultOptions3} />
-      </div> */}
       <div
         id="skills"
         className=" scroll-smooth h-fit w-full py-20 md:px-20 rounded-t-3xl bg-black"

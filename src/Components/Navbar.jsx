@@ -4,13 +4,14 @@ import {
   FaLongArrowAltUp,
   FaRProject,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <div className="bg-white backdrop-blur-lg fixed py-2 px-3 w-full top-0 left-0 font-mont z-10 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] flex items-center">
       <div className=" w-full md:max-w-screen-lg mx-auto flex justify-between items-center">
         <a
           className=" md:text-xl md:font-extrabold uppercase font-extrabold"
-          href=""
+          href="#"
         >
           MERN<span className=" text-[#FA7F5C]">Developer</span>
         </a>

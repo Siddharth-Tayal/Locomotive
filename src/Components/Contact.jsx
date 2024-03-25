@@ -124,7 +124,7 @@ export default function Contact() {
               </div>{" "}
               <button
                 disabled={loading}
-                className=" disabled:cursor-not-allowed flex items-center justify-center p-4 rounded-full bg-[#36b7c5] w-full hover:opacity-55 "
+                className=" disabled:cursor-not-allowed flex items-center justify-center p-4 rounded-full bg-[#34B6EF] w-full hover:opacity-55 "
               >
                 {loading ? "Sending..." : "Send Message"}
               </button>
@@ -187,35 +187,35 @@ export default function Contact() {
             </div>
             <div className=" flex flex-col items-center gap-3">
               <h3 className=" text-xl font-semibold">Social Links </h3>
-              <div className=" flex items-center gap-3 text-3xl text-[#36b7c5]">
+              <div className=" flex items-center gap-3 text-3xl text-[#34B6EF]">
                 <a
                   href="https://www.linkedin.com/in/siddharth-tayal-65203a266/"
-                  className=" hover:text-blue-500 duration-300"
+                  className=" hover:text-black duration-300"
                 >
                   {" "}
                   <FaLinkedin />{" "}
                 </a>{" "}
                 <a
                   href="https://github.com/Siddharth-Tayal"
-                  className=" hover:text-blue-500 duration-300"
+                  className=" hover:text-black duration-300"
                 >
                   <FaGithub />
                 </a>{" "}
                 <a
                   href="https://auth.geeksforgeeks.org/user/siddharth_tayal/?utm_source=geeksforgeeks&utm_medium=colleges&utm_campaign=users"
-                  className=" hover:text-blue-500 duration-300"
+                  className=" hover:text-black duration-300"
                 >
                   <SiGeeksforgeeks />
                 </a>
                 <a
                   href="https://www.instagram.com/s_tayal_01/"
-                  className=" hover:text-blue-500 duration-300"
+                  className=" hover:text-black duration-300"
                 >
                   <FaInstagram />
                 </a>{" "}
                 <a
                   href="https://wa.me/+918813055897"
-                  className=" hover:text-blue-500 duration-300"
+                  className=" hover:text-black duration-300"
                 >
                   <FaWhatsapp />
                 </a>

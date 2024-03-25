@@ -61,7 +61,7 @@ function Home() {
                 {" "}
                 <a
                   href="#about"
-                  className=" flex items-center justify-center gap-2 py-2 px-3 rounded-full bg-blue-500 text-white duration-200 hover:text-blue-500 hover:bg-white border-2 border-transparent hover:border-blue-500"
+                  className=" flex items-center justify-center gap-2 py-2 px-3 rounded-full bg-[#34B6EF] text-white duration-200 hover:text-[#34B6EF] hover:bg-white border-2 border-transparent hover:border-[#34B6EF]"
                 >
                   About Me <FaArrowCircleDown />
                 </a>{" "}
@@ -81,35 +81,35 @@ function Home() {
             >
               <a
                 href="https://www.linkedin.com/in/siddharth-tayal-65203a266/"
-                className=" rounded-full p-3 bg-blue-500 text-white duration-300 hover:bg-[#FA7F5C] "
+                className=" rounded-full p-3 bg-[#34B6EF] text-white duration-300 hover:bg-[#FA7F5C] "
               >
                 {" "}
                 <GrLinkedin />{" "}
               </a>
               <a
                 href="https://www.instagram.com/s_tayal_01/"
-                className=" rounded-full p-3 bg-blue-500 text-white duration-300 hover:bg-[#FA7F5C] "
+                className=" rounded-full p-3 bg-[#34B6EF] text-white duration-300 hover:bg-[#FA7F5C] "
               >
                 {" "}
                 <GrInstagram />{" "}
               </a>
               <a
                 href="https://github.com/Siddharth-Tayal"
-                className=" rounded-full p-3 bg-blue-500 text-white duration-300 hover:bg-[#FA7F5C] "
+                className=" rounded-full p-3 bg-[#34B6EF] text-white duration-300 hover:bg-[#FA7F5C] "
               >
                 {" "}
                 <GrGithub />{" "}
               </a>
               <a
                 href="https://auth.geeksforgeeks.org/user/siddharth_tayal/?utm_source=geeksforgeeks&utm_medium=colleges&utm_campaign=users"
-                className=" rounded-full p-3 bg-blue-500 text-white duration-300 hover:bg-[#FA7F5C] "
+                className=" rounded-full p-3 bg-[#34B6EF] text-white duration-300 hover:bg-[#FA7F5C] "
               >
                 {" "}
                 <SiGeeksforgeeks />{" "}
               </a>
               <a
                 href="https://wa.me/+918813055897"
-                className=" rounded-full p-3 bg-blue-500 text-white duration-300 hover:bg-[#FA7F5C] "
+                className=" rounded-full p-3 bg-[#34B6EF] text-white duration-300 hover:bg-[#FA7F5C] "
               >
                 {" "}
                 <FaWhatsapp />{" "}
@@ -133,35 +133,35 @@ function Home() {
             >
               <a
                 href="https://www.linkedin.com/in/siddharth-tayal-65203a266/"
-                className=" rounded-full p-3 bg-blue-500 text-white duration-300 hover:bg-[#FA7F5C] "
+                className=" rounded-full p-3 bg-[#34B6EF] text-white duration-300 hover:bg-[#FA7F5C] "
               >
                 {" "}
                 <GrLinkedin />{" "}
               </a>
               <a
                 href="https://www.instagram.com/s_tayal_01/"
-                className=" rounded-full p-3 bg-blue-500 text-white duration-300 hover:bg-[#FA7F5C] "
+                className=" rounded-full p-3 bg-[#34B6EF] text-white duration-300 hover:bg-[#FA7F5C] "
               >
                 {" "}
                 <GrInstagram />{" "}
               </a>
               <a
                 href="https://github.com/Siddharth-Tayal"
-                className=" rounded-full p-3 bg-blue-500 text-white duration-300 hover:bg-[#FA7F5C] "
+                className=" rounded-full p-3 bg-[#34B6EF] text-white duration-300 hover:bg-[#FA7F5C] "
               >
                 {" "}
                 <GrGithub />{" "}
               </a>
               <a
                 href="https://auth.geeksforgeeks.org/user/siddharth_tayal/?utm_source=geeksforgeeks&utm_medium=colleges&utm_campaign=users"
-                className=" rounded-full p-3 bg-blue-500 text-white duration-300 hover:bg-[#FA7F5C] "
+                className=" rounded-full p-3 bg-[#34B6EF] text-white duration-300 hover:bg-[#FA7F5C] "
               >
                 {" "}
                 <SiGeeksforgeeks />{" "}
               </a>
               <a
                 href="https://wa.me/+918813055897"
-                className=" rounded-full p-3 bg-blue-500 text-white duration-300 hover:bg-[#FA7F5C] "
+                className=" rounded-full p-3 bg-[#34B6EF] text-white duration-300 hover:bg-[#FA7F5C] "
               >
                 {" "}
                 <FaWhatsapp />{" "}
@@ -213,7 +213,7 @@ function Home() {
             initial={{ x: -5000 }}
             animate={{ x: 0 }}
             transition={{ duration: 1 }}
-            className=" flex flex-col items-center justify-center gap-1 text-blue-500 font-semibold uppercase text-sm sm:text-base"
+            className=" flex flex-col items-center justify-center gap-1 text-[#34B6EF] font-semibold uppercase text-sm sm:text-base"
           >
             <FaLaptop className=" text-5xl text-[#FA7F5C]" />
             Web Designs
@@ -222,7 +222,7 @@ function Home() {
             initial={{ y: 5000 }}
             animate={{ y: 0 }}
             transition={{ duration: 1 }}
-            className=" flex flex-col items-center justify-center gap-1 text-blue-500 font-semibold uppercase text-sm sm:text-base"
+            className=" flex flex-col items-center justify-center gap-1 text-[#34B6EF] font-semibold uppercase text-sm sm:text-base"
           >
             <FaMobileAlt className=" text-5xl text-[#FA7F5C]" />
             Mobile Designs
@@ -231,7 +231,7 @@ function Home() {
             initial={{ x: 5000 }}
             animate={{ x: 0 }}
             transition={{ duration: 1 }}
-            className=" flex flex-col items-center justify-center gap-1 text-blue-500 font-semibold uppercase text-sm sm:text-base"
+            className=" flex flex-col items-center justify-center gap-1 text-[#34B6EF] font-semibold uppercase text-sm sm:text-base"
           >
             <FaHorseHead className=" text-5xl text-[#FA7F5C]" />
             Problem Solving
