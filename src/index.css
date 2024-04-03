@@ -9,10 +9,13 @@
   box-sizing: border-box;
 }
 ::selection {
-  background-color: green;
-  color: black;
+  background-color: rgb(2, 7, 61);
+  color: orangered;
+  filter: blur(10px); /* opacity: 0.1; */
 }
-
+img {
+  user-select: none;
+}
 .box-container {
   align-items: center;
   display: flex;

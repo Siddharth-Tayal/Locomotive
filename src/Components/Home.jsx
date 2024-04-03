@@ -18,7 +18,7 @@ function Home() {
       data-scroll
       data-scroll-section
       data-scroll-speed="-.9"
-      className=" overflow-hidden h-fit  pt-[35px] md:pt-[80px]  bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5lIw4FZ_UL38X85GgNDRTpGCNjYjsFg_XYA&usqp=CAU')]"
+      className="overflow-hidden h-fit  pt-[35px] md:pt-[80px]  bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5lIw4FZ_UL38X85GgNDRTpGCNjYjsFg_XYA&usqp=CAU')]"
     >
       {" "}
       <div className=" h-[100%] w-[100%] flex flex-col items-center justify-evenly md:gap-10 py-10 px-6">

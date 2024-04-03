@@ -92,7 +92,7 @@ function Skills() {
     <div className=" h-fit bg-[#cdea68]">
       <div
         id="skills"
-        className=" scroll-smooth h-fit w-full py-20 md:px-20 rounded-t-3xl bg-black"
+        className=" h-fit w-full py-20 md:px-20 rounded-t-3xl bg-black"
       >
         <div>
           <h1 className=" text-white text-[6vw] leading-[6vw] md:text-4xl md:leading-3 font-semibold ml-8 md:ml-0 p-3 pb-3 md:pb-6 mb-10 border-b-[1px] w-fit border-white">

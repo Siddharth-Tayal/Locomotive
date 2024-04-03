@@ -29,11 +29,17 @@ export function App() {
   const locomotiveScroll = new LocomotiveScroll({
     el: document.querySelector(".smooth-scroll"),
     smooth: true,
+    smartphone: {
+      smooth: true,
+    },
+    tablet: {
+      smooth: true,
+    },
   });
   async function changing() {
     setTimeout(() => {
       setShow(false);
-    }, 3000);
+    }, 1500);
   }
   useEffect(() => {
     AOS.init();
@@ -48,7 +54,6 @@ export function App() {
         >
           <div className=" absolute">
             <Lottie
-              speed={0.1}
               options={defaultOptions}
               width={innerWidth}
               height={innerHeight}
@@ -60,7 +65,6 @@ export function App() {
         </div>
       ) : (
         <div>
-          {/* <Navbar2 /> */}
           <Navbar />
           <Home />
           <Marquee />
